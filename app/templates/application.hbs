@@ -1,5 +1,7 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+Welcome to our app. Clicking the below link will attempt to take you to our
+{{link-to-external "basic engine" "basic-engine"}} but will fail due to a fatal
+error having been thrown during engine initialization. You can view the error
+in the inspector.
 
+{{link-to-external "Click here to produce error" "basic-engine"}}
 {{outlet}}

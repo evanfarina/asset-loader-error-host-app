@@ -48,5 +48,14 @@
   },
   "engines": {
     "node": "8.* || >= 10.*"
+  },
+  "dependencies": {
+    "ember-engines": "^0.8.3",
+    "external-addon": "file:../external-addon"
+  },
+  "ember-addon": {
+    "paths": [
+      "lib/basic-engine"
+    ]
   }
 }
