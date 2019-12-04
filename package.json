@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "ember-engines": "^0.8.3",
-    "external-addon": "file:../external-addon"
+    "external-addon": "git+https://github.com/evanfarina/asset-loader-error-ext-addon.git"
   },
   "ember-addon": {
     "paths": [
