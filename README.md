@@ -1,57 +1,11 @@
-# host-app
+This app demonstrates a fatal error that is thrown when a host app which contains an engine depends on an external addon that relies on, and extends from, ember-asset-loader.
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+**Repro steps**
 
-## Prerequisites
-
-You will need the following things properly installed on your computer.
-
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
-
-## Installation
-
-* `git clone <repository-url>` this repository
-* `cd host-app`
-* `npm install`
-
-## Running / Development
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+1. Create a local directory called repro-app
+2. cd repro-app
+3. git clone https://github.com/evanfarina/asset-loader-error-host-app.git (the host app)
+4. git clone https://github.com/evanfarina/asset-loader-error-ext-addon.git (the external addon)
+5. npm install  - note: The host app's package.json contains a relative path to the external addon's directory.
+6. ember serve
+7. Click link that is output on page or visit the `basic-engine` route.
