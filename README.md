@@ -5,10 +5,9 @@ This app demonstrates a fatal error that is thrown when a host app which contain
 1. Create a local directory called repro-app
 2. cd repro-app
 3. git clone https://github.com/evanfarina/asset-loader-error-host-app.git (the host app)
-4. git clone https://github.com/evanfarina/asset-loader-error-ext-addon.git (the external addon)
-5. npm install  - note: The host app's package.json contains a relative path to the external addon's directory.
-6. ember serve
-7. Click link that is output on page or visit the `basic-engine` route.
+4. `npm install`
+5. ember serve
+6. Click link that is output on page or visit the `basic-engine` route.
 
 
 **Error**
